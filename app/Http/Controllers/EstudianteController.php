@@ -15,7 +15,7 @@ class EstudianteController extends Controller
         $response = Http::get('https://randomuser.me/api/', [
             'results' => 5,
             'nat' => 'us' // Puedes ajustar la nacionalidad si es necesario
-        ]);
+        ]); 
 
         $estudiantes = $response->json()['results'];
 
