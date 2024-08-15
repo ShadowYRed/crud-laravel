@@ -26,3 +26,32 @@ Sigue estos pasos para configurar el proyecto en tu máquina local:
 ```bash
 git clone https://github.com/ShadowYRed/crud-laravel.git
 cd crud-laravel
+
+2. Instalar dependencias de PHP con Composer
+bash
+Copiar código
+composer install
+3. Configurar el archivo .env
+Copia el archivo .env.example a .env y configura las variables de entorno, especialmente la conexión a la base de datos:
+
+bash
+Copiar código
+cp .env.example .env
+Luego, genera una clave de aplicación:
+
+bash
+Copiar código
+php artisan key:generate
+4. Migrar la base de datos con seeder
+Migra la base de datos y ejecuta el seeder para insertar automáticamente la materia "Matemáticas":
+
+bash
+Copiar código
+php artisan migrate --seed
+5. Iniciar el servidor de desarrollo
+Inicia el servidor local de Laravel:
+
+bash
+Copiar código
+php artisan serve
+El proyecto estará disponible en http://localhost:8000.
