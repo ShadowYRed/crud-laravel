@@ -7,7 +7,7 @@
     <!-- Botones para agregar nota y estudiantes -->
     <div class="mb-3">
         <a href="{{ route('notas.create') }}" class="btn btn-primary">Agregar Nota</a>
-        <a href="{{ route('students.add') }}" class="btn btn-secondary">Agregar Estudiantes</a>
+        <a href="{{ route('agregar.estudiantes') }}" class="btn btn-secondary">Agregar Estudiantes</a>
     </div>
 
     <!-- Mensaje de éxito, si existe -->
